@@ -43,6 +43,8 @@ class DocumentProcessor:
         
         # Step 1: Render a file uploader widget. Replace 'None' with the Streamlit file uploader code.
         uploaded_files = st.file_uploader(
+            type = ['pdf'],
+            accept_multiple_files = True
             #####################################
             # Allow only type `pdf`
             # Allow multiple PDFs for ingestion
